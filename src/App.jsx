@@ -15,7 +15,7 @@ import ArtistDetails from './components/ArtistDetails'
 
       <main>
         <div>
-          {footerColumns}
+          {ArtistDetails}
         </div>
       </main>
     </div>
