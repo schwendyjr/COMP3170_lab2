@@ -1,4 +1,4 @@
-export const artist = [
+export const artists = [
     {
         name: 'The Beatles',
         photo_url: "https://upload.wikimedia.org/wikipedia/commons/9/9f/Beatles_ad_1965_just_the_beatles_crop.jpg",

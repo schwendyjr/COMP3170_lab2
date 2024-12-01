@@ -1,25 +1,18 @@
-import ArtistHeader from './components/Heading'
-import ArtistDetails from './components/ArtistDetails'
+import React from 'react';
+import ArtistDetails from './components/ArtistDetails';
+import { artists } from './artistData';
 
-
- function App() {
-  const artistList = artist.map(artist => <artist key={artist.name} artist={artist} />);
-
-  return (
-    <div class="app">
-      
-        <header>
-          {ArtistHeader}
-        </header>
-      
-
-      <main>
-        <div>
-          {ArtistDetails}
+const App = () => {
+    return (
+        <div className="App">
+            <h1>Best-Selling Music Artists</h1>
+            <div className="artist-list">
+                {artists.map((artist, index) => (
+                    <ArtistDetails key={index} artist={artist} />
+                ))}
+            </div>
         </div>
-      </main>
-    </div>
-  );
-}
+    );
+};
 
 export default App;

@@ -1,21 +1,14 @@
-import React from "react";
-import {artist} from "./mydata";
+import React from 'react';
 
-    
-    export default function ArtistDetails({artist}){
+const ArtistDetails = ({ artist }) => {
+    return (
+        <div className="artist-card">
+            <img src={artist.photo_url} alt={`${artist.name} photo`} />
+            <h2>{artist.name}</h2>
+            <p><strong>Country:</strong> {artist.country}</p>
+            <p><strong>Years Active:</strong> {artist.years_active}</p>
+        </div>
+    );
+};
 
-        return (
-            <div>
-                <div>
-                    <img src={image_url} alt={artist.name} />
-                </div>
-                <p>
-                    
-                  <span >{<h2>artist.name</h2>}</span>
-                  <span >Country:{artist.country}</span>
-                  <span >Years Active:{artist.years_active}</span>
-    
-                </p>
-            </div>
-        );
-    }
+export default ArtistDetails;
